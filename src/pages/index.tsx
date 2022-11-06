@@ -174,7 +174,7 @@ export default function Home() {
     setIsSending(true)
     try {
       // TODO: 期限の判別をより厳密にするならcontractのfunctionをcallした方がいい
-      if (data.isExpired) {
+      if (data.isExpired()) {
         const transaction = await gritNFTContract.updateNFTOf(data.tokenID, {
           value: ethers.utils.parseUnits('0.01', 'ether'),
         })
