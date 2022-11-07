@@ -12,7 +12,7 @@ interface Window {
   ethereum?: ethers.providers.ExternalProvider
 }
 
-const CONTRACT_ADDRESS = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+const CONTRACT_ADDRESS = '0xc0F43D539883532d0A5099ebBc63F2C6A4B70ecC'
 
 export default function Home() {
   const [account, setAccount] = useState<string>(null)
